@@ -86,8 +86,9 @@ Minden modulnak **saját, elszigetelt API-ja** van (`/api/<modul>/…`), így a 
 
 ## 🔀 Beadás (Git-folyamat)
 
-1. Kis lépésekben commitolj, beszédes üzenetekkel („commit small, commit often”).
-2. `git push`, majd nyiss **Pull Requestet** a `main`-re.
-3. A CI lefut (csak a saját mappádat módosítottad-e, nincs-e saját CSS, szintaktikailag helyes-e a JS).
-4. Kérj review-t egy csapattárstól. **1 jóváhagyás + zöld CI** után a PR magától beolvad, és pár perc múlva megjelenik az éles oldalon.
-5. Te is nézd át valaki másnak a PR-ját: fusson, teljesüljenek a követelmények, legyen JSDoc.
+A lépésenkénti parancsok (parancssor és lazygit) a [README Git-útmutatójában](../README.md#-git-útmutató) vannak.
+
+1. Kis lépésekben commitolj, beszédes üzenetekkel („commit small, commit often”), pl. `rockets: betöltés Promise.all-lal`.
+2. `git push`, majd nyiss **Pull Requestet** a `main`-re, és töltsd ki a PR-sablon ellenőrzőlistáját.
+3. A Vercel pár perc múlva kommentben kiírja az **előnézeti linket**: ott próbáld ki a modulodat.
+4. Ha az előnézeten minden működik, merge-eld a PR-t (**Squash and merge**); review nem kell. Pár perc múlva megjelenik az éles oldalon.

@@ -14,7 +14,4 @@
 - [ ] Tömeges módosítás `Promise.all`-lal
 - [ ] `debug/` javítva, `DEBUG.md` kitöltve
 - [ ] JSDoc minden metóduson, a konzolon nincs hiba
-
-## Reviewernek
-
-<!-- Mire figyeljen, mit próbáljon ki? -->
+- [ ] A Vercel előnézeti linkjén kipróbáltam
