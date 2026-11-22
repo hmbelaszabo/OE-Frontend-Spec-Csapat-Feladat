@@ -1,0 +1,92 @@
+[
+  {
+    "id": "a7536fd3-6047-4727-90db-f3a320542bfb",
+    "name": "Merkúr",
+    "type": "planet",
+    "distanceMkm": 77,
+    "avgTempC": 167,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.38
+  },
+  {
+    "id": "2078a0a5-28bc-43bb-af86-20b36aab9300",
+    "name": "Vénusz",
+    "type": "planet",
+    "distanceMkm": 38.2,
+    "avgTempC": 464,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.9
+  },
+  {
+    "id": "6618c4fe-6a36-4b55-9d96-2e5d958fe59f",
+    "name": "Mars",
+    "type": "planet",
+    "distanceMkm": 54.6,
+    "avgTempC": -63,
+    "habitable": false,
+    "moons": 2,
+    "gravity": 0.38
+  },
+  {
+    "id": "c9bd3d10-0712-4a3c-9866-3946ae758d7d",
+    "name": "Jupiter",
+    "type": "planet",
+    "distanceMkm": 588,
+    "avgTempC": -110,
+    "habitable": false,
+    "moons": 95,
+    "gravity": 2.53
+  },
+  {
+    "id": "826f0321-2ca7-46e2-a678-0de0587b8498",
+    "name": "Hold",
+    "type": "moon",
+    "distanceMkm": 0.384,
+    "avgTempC": -20,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.165
+  },
+  {
+    "id": "9467d96c-8244-4caf-99a4-3a57b7f43a82",
+    "name": "Europa",
+    "type": "moon",
+    "distanceMkm": 628,
+    "avgTempC": -160,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.134
+  },
+  {
+    "id": "bcd42862-3d8b-4ac8-a470-6816b0ef8b5b",
+    "name": "Titán",
+    "type": "moon",
+    "distanceMkm": 1200,
+    "avgTempC": -179,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.138
+  },
+  {
+    "id": "4c90e460-c2c2-4f68-b180-5b3ae9abe09a",
+    "name": "Ceres",
+    "type": "asteroid",
+    "distanceMkm": 263,
+    "avgTempC": -105,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.029
+  },
+  {
+    "id": "74c75674-3d54-4a00-bc6d-1658fe1a4ea0",
+    "name": "Bennu",
+    "type": "asteroid",
+    "distanceMkm": 0.75,
+    "avgTempC": 30,
+    "habitable": false,
+    "moons": 0,
+    "gravity": 0.00001
+  }
+]

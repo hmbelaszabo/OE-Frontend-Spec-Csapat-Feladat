@@ -1,0 +1,7 @@
+# A közös infrastruktúra gazdája a repó tulajdonosa – ezeket érintő PR-hoz automatikusan őt kéri reviewerként.
+/.github/        @belaszabo2323
+/server/         @belaszabo2323
+/api/            @belaszabo2323
+/public/shared/  @belaszabo2323
+/vercel.json     @belaszabo2323
+/package.json    @belaszabo2323

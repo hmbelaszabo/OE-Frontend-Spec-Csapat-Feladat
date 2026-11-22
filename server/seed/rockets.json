@@ -1,0 +1,92 @@
+[
+  {
+    "id": "010cc6f1-bed5-4dd7-8cd1-765525ae13fe",
+    "name": "Falcon 9",
+    "manufacturer": "SpaceX",
+    "payloadTons": 22.8,
+    "stages": 2,
+    "reusable": true,
+    "costPerLaunch": 67,
+    "image": ""
+  },
+  {
+    "id": "b01a8cca-ac45-4bb7-9ab9-e8e2740535a1",
+    "name": "Falcon Heavy",
+    "manufacturer": "SpaceX",
+    "payloadTons": 63.8,
+    "stages": 2,
+    "reusable": true,
+    "costPerLaunch": 97,
+    "image": ""
+  },
+  {
+    "id": "d7e6b0ae-669f-433e-b564-d5b1acda5f44",
+    "name": "Starship",
+    "manufacturer": "SpaceX",
+    "payloadTons": 150,
+    "stages": 2,
+    "reusable": true,
+    "costPerLaunch": 90,
+    "image": ""
+  },
+  {
+    "id": "c78de9ea-9c78-4d95-bd60-b2d647de2f12",
+    "name": "SLS Block 1",
+    "manufacturer": "NASA / Boeing",
+    "payloadTons": 95,
+    "stages": 2,
+    "reusable": false,
+    "costPerLaunch": 2000,
+    "image": ""
+  },
+  {
+    "id": "94d8205e-1ea3-4828-b508-b516a0f0208b",
+    "name": "Ariane 6",
+    "manufacturer": "ArianeGroup",
+    "payloadTons": 21.6,
+    "stages": 2,
+    "reusable": false,
+    "costPerLaunch": 115,
+    "image": ""
+  },
+  {
+    "id": "3a7b659a-3460-42ab-9533-84c056826a80",
+    "name": "Atlas V",
+    "manufacturer": "United Launch Alliance",
+    "payloadTons": 18.8,
+    "stages": 2,
+    "reusable": false,
+    "costPerLaunch": 110,
+    "image": ""
+  },
+  {
+    "id": "1c6be1d1-c913-4055-a88d-dc5419a63a87",
+    "name": "Electron",
+    "manufacturer": "Rocket Lab",
+    "payloadTons": 0.3,
+    "stages": 2,
+    "reusable": false,
+    "costPerLaunch": 7.5,
+    "image": ""
+  },
+  {
+    "id": "b46cd43d-2e03-4803-b344-2b87ee94fbc5",
+    "name": "Szojuz-2",
+    "manufacturer": "Progressz",
+    "payloadTons": 8.2,
+    "stages": 3,
+    "reusable": false,
+    "costPerLaunch": 48,
+    "image": ""
+  },
+  {
+    "id": "34d91bc4-6b19-427f-93c8-09c6fab37ffc",
+    "name": "New Glenn",
+    "manufacturer": "Blue Origin",
+    "payloadTons": 45,
+    "stages": 2,
+    "reusable": true,
+    "costPerLaunch": 70,
+    "image": ""
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "dbd3388b-ea4a-4bb6-93db-c0c860b6d1c1",
+    "name": "Artemis I",
+    "rocketId": "670076a4-f739-4469-b39a-e64c54f138a2",
+    "budget": 4100,
+    "durationDays": 25,
+    "launchDate": "2022-11-16",
+    "successful": true,
+    "objectives": [
+      "Orion hőpajzs tesztje",
+      "Holdkerülés"
+    ]
+  },
+  {
+    "id": "d2cd6caf-88e9-45e2-80aa-6c30403c0b43",
+    "name": "Artemis II",
+    "rocketId": "670076a4-f739-4469-b39a-e64c54f138a2",
+    "budget": 4200,
+    "durationDays": 10,
+    "launchDate": "2026-04-01",
+    "successful": true,
+    "objectives": [
+      "Első emberes Holdkerülés 1972 óta",
+      "Életfenntartó rendszerek tesztje"
+    ]
+  },
+  {
+    "id": "f9713b2e-cc55-42ff-92b9-99810bf008dc",
+    "name": "Artemis III",
+    "rocketId": "670076a4-f739-4469-b39a-e64c54f138a2",
+    "budget": 4500,
+    "durationDays": 30,
+    "launchDate": "2028-09-01",
+    "successful": false,
+    "objectives": [
+      "Holdra szállás a déli póluson",
+      "Mintavétel"
+    ]
+  },
+  {
+    "id": "ef1e7d69-75ce-42ed-a4f4-ef78e6bb6807",
+    "name": "Crew-1",
+    "rocketId": "c76faa65-53c4-4c97-b875-e5737a40e5ed",
+    "budget": 300,
+    "durationDays": 167,
+    "launchDate": "2020-11-16",
+    "successful": true,
+    "objectives": [
+      "Legénységcsere az ISS-en"
+    ]
+  },
+  {
+    "id": "9525db30-7512-4d42-bf82-199c9f5a4fa4",
+    "name": "Mars 2020 (Perseverance)",
+    "rocketId": "8f678474-ec06-4107-88f2-0b392affbac7",
+    "budget": 2700,
+    "durationDays": 203,
+    "launchDate": "2020-07-30",
+    "successful": true,
+    "objectives": [
+      "Leszállás a Jezero-kráterben",
+      "Ingenuity helikopter",
+      "Kőzetminták gyűjtése"
+    ]
+  },
+  {
+    "id": "aa1d3576-891e-44b2-87b7-55c794e322a1",
+    "name": "James Webb űrtávcső",
+    "rocketId": "d36da3a4-0779-43d6-bd96-5ae130369142",
+    "budget": 10000,
+    "durationDays": 30,
+    "launchDate": "2021-12-25",
+    "successful": true,
+    "objectives": [
+      "Pályára állás az L2 pontban",
+      "Infravörös égboltfelmérés"
+    ]
+  },
+  {
+    "id": "cf69681b-269d-42fa-8cb2-30f2c38e660f",
+    "name": "Psyche",
+    "rocketId": "77da6ddb-5c4b-4ca1-b6c5-ecf6a4235f0c",
+    "budget": 1200,
+    "durationDays": 2150,
+    "launchDate": "2023-10-13",
+    "successful": true,
+    "objectives": [
+      "Fémes kisbolygó vizsgálata"
+    ]
+  },
+  {
+    "id": "a2ea8a39-74b3-4a01-bdb5-d2d88108a188",
+    "name": "Starship IFT-1",
+    "rocketId": "aaf28d5c-c3e5-4025-9dbd-6818b40aaefb",
+    "budget": 90,
+    "durationDays": 1,
+    "launchDate": "2023-04-20",
+    "successful": false,
+    "objectives": [
+      "Integrált tesztrepülés"
+    ]
+  },
+  {
+    "id": "6dfb2bef-c719-441e-bdbf-6fcf3d06a592",
+    "name": "Europa Clipper",
+    "rocketId": "77da6ddb-5c4b-4ca1-b6c5-ecf6a4235f0c",
+    "budget": 5000,
+    "durationDays": 2000,
+    "launchDate": "2024-10-14",
+    "successful": true,
+    "objectives": [
+      "Az Europa jégpáncéljának vizsgálata",
+      "Felszín alatti óceán keresése"
+    ]
+  },
+  {
+    "id": "1f442eb0-cc42-4ac9-af7e-49a3140ad15d",
+    "name": "Rosalind Franklin rover",
+    "rocketId": "77da6ddb-5c4b-4ca1-b6c5-ecf6a4235f0c",
+    "budget": 1500,
+    "durationDays": 220,
+    "launchDate": "2028-10-15",
+    "successful": false,
+    "objectives": [
+      "Élet nyomainak keresése a Marson",
+      "2 méteres fúrás"
+    ]
+  }
+]

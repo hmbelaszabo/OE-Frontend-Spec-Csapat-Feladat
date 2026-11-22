@@ -1,0 +1,199 @@
+/*
+ * Közös stílus (kész fájl). A modulok NEM kapnak saját CSS-t:
+ * minden más Bootstrap utility-osztállyal oldható meg.
+ * Hangulat: a tanári todo-manager mintájára átmenetes háttér + hoverre kiszínesedő kártyák.
+ */
+:root {
+  --sa-accent: #7c5cff;
+  --sa-accent-rgb: 124, 92, 255;
+  --sa-accent-2: #22c1c3;
+  --sa-img-height: 160px;
+}
+
+/* ---------- háttér: sötét téma (űr) ---------- */
+[data-bs-theme="dark"] body {
+  background: linear-gradient(
+    125deg,
+    #12141c 0%,
+    #1a1d33 40%,
+    #241a3d 70%,
+    #13252b 100%
+  );
+  background-attachment: fixed;
+  --bs-tertiary-bg-rgb: 18, 20, 28;
+}
+
+[data-bs-theme="dark"] .card {
+  --bs-card-bg: rgba(30, 33, 48, 0.7);
+}
+
+/* ---------- háttér: világos téma ---------- */
+[data-bs-theme="light"] body {
+  background: linear-gradient(
+    125deg,
+    #f4f6fb 0%,
+    #ebe8ff 45%,
+    #e3f6f6 75%,
+    #f6f7fa 100%
+  );
+  background-attachment: fixed;
+  --bs-tertiary-bg-rgb: 248, 249, 252;
+}
+
+[data-bs-theme="light"] .card {
+  --bs-card-bg: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ---------- navbar: áttetsző, homályosított ---------- */
+.navbar.sticky-top {
+  --bs-bg-opacity: 0.75;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand .bi,
+.page-icon {
+  color: var(--sa-accent);
+}
+
+.navbar .nav-link {
+  border-radius: var(--bs-border-radius);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: rgba(var(--sa-accent-rgb), 0.15);
+}
+
+/* ---------- oldalcím: színátmenetes ikon ---------- */
+header .page-icon {
+  background: linear-gradient(135deg, var(--sa-accent), var(--sa-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- kártyák: üveghatás + hover ---------- */
+.card {
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--sa-accent);
+  box-shadow:
+    0 4px 16px rgba(var(--sa-accent-rgb), 0.25),
+    0 8px 32px rgba(var(--sa-accent-rgb), 0.15);
+}
+
+.entity-card:hover {
+  transform: translateY(-4px);
+}
+
+/* a kategória-kártyák a saját színüket tartják meg */
+.card.border-success:hover { border-color: var(--bs-success) !important; }
+.card.border-warning:hover { border-color: var(--bs-warning) !important; }
+.card.border-danger:hover { border-color: var(--bs-danger) !important; }
+
+/* kártyakép és helyettesítő ikon azonos magassággal */
+.entity-img {
+  height: var(--sa-img-height);
+  object-fit: cover;
+}
+
+.entity-placeholder {
+  height: var(--sa-img-height);
+  font-size: 4rem;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--sa-accent-rgb), 0.18),
+    rgba(34, 193, 195, 0.12)
+  );
+  transition: color 0.2s ease;
+}
+
+.entity-card:hover .entity-placeholder {
+  color: var(--sa-accent) !important;
+}
+
+/* ---------- statisztika ---------- */
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ---------- gombok: kis emelkedés hoverre ---------- */
+.btn {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(var(--sa-accent-rgb), 0.25);
+}
+
+/* ---------- lista-elemek ---------- */
+.list-group-item {
+  background-color: transparent;
+  transition: background-color 0.15s ease, padding-left 0.15s ease;
+}
+
+/* kártyán belüli adatsorok: csak halvány kiemelés */
+.entity-card .list-group-item:hover {
+  background-color: rgba(var(--sa-accent-rgb), 0.06);
+}
+
+/* kategória-listák: kiemelés + kis csúszás */
+[id^="category-"] .list-group-item:hover {
+  background-color: rgba(var(--sa-accent-rgb), 0.1);
+  padding-left: 1.25rem;
+}
+
+/* ---------- kártya-fejléc és -lábléc ---------- */
+.card-header,
+.card-footer {
+  background-color: rgba(var(--sa-accent-rgb), 0.06);
+}
+
+.entity-card:hover .card-header {
+  background-color: rgba(var(--sa-accent-rgb), 0.14);
+}
+
+.stat-card .card-body {
+  min-height: 4.5rem;
+}
+
+/* ---------- modal: üveghatás ---------- */
+.modal-content {
+  background-color: rgba(var(--bs-body-bg-rgb), 0.92);
+  backdrop-filter: blur(12px);
+  border-color: rgba(var(--sa-accent-rgb), 0.4);
+}
+
+footer {
+  background-color: rgba(var(--bs-body-bg-rgb), 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .btn,
+  .list-group-item {
+    transition: none;
+  }
+  .entity-card:hover,
+  .btn:not(:disabled):hover {
+    transform: none;
+  }
+}

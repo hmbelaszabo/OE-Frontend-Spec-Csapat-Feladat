@@ -1,0 +1,42 @@
+[
+  {
+    "id": "c76faa65-53c4-4c97-b875-e5737a40e5ed",
+    "name": "Falcon 9"
+  },
+  {
+    "id": "77da6ddb-5c4b-4ca1-b6c5-ecf6a4235f0c",
+    "name": "Falcon Heavy"
+  },
+  {
+    "id": "aaf28d5c-c3e5-4025-9dbd-6818b40aaefb",
+    "name": "Starship"
+  },
+  {
+    "id": "670076a4-f739-4469-b39a-e64c54f138a2",
+    "name": "SLS Block 1"
+  },
+  {
+    "id": "8f678474-ec06-4107-88f2-0b392affbac7",
+    "name": "Atlas V"
+  },
+  {
+    "id": "d36da3a4-0779-43d6-bd96-5ae130369142",
+    "name": "Ariane 5"
+  },
+  {
+    "id": "320a68d3-3eeb-45bb-a08f-6d34be3b5e16",
+    "name": "Ariane 6"
+  },
+  {
+    "id": "11d63589-7e7a-4c0e-b885-a98cfa801f4d",
+    "name": "Electron"
+  },
+  {
+    "id": "9c7d5c1d-3812-49cc-8a7c-698703d4a9ea",
+    "name": "Szojuz-2"
+  },
+  {
+    "id": "d49e970d-cb0d-406a-bff7-e9fc5fffcac8",
+    "name": "New Glenn"
+  }
+]

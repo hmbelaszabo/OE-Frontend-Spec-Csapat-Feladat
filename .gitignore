@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env*.local
+.vercel/
+
+# belső tervezési anyag (teljes neveket tartalmaz) – nem kerül a nyilvános repóba
+zh_gyak_roadmap.md
+
+# Claude Code-nak szóló utasítások – csak helyben kellenek
+CLAUDE.md
+.claude/

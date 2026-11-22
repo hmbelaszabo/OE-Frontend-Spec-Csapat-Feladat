@@ -1,0 +1,136 @@
+[
+  {
+    "id": "fc6725f8-7e2a-4a5d-be7a-bf6d139de89d",
+    "name": "Hubble űrtávcső",
+    "targetId": "5126aa7b-35a7-4093-bad9-1ec0da8e0c05",
+    "altitudeKm": 540,
+    "massKg": 11110,
+    "launchYear": 1990,
+    "operational": true,
+    "instruments": [
+      "WFC3",
+      "COS",
+      "STIS"
+    ]
+  },
+  {
+    "id": "7d131f63-56cc-49c1-b990-3f23c5242b53",
+    "name": "Landsat 8",
+    "targetId": "5126aa7b-35a7-4093-bad9-1ec0da8e0c05",
+    "altitudeKm": 705,
+    "massKg": 2623,
+    "launchYear": 2013,
+    "operational": true,
+    "instruments": [
+      "OLI",
+      "TIRS"
+    ]
+  },
+  {
+    "id": "dfd81126-e9e0-48aa-a975-aa9f5d3d939c",
+    "name": "Envisat",
+    "targetId": "5126aa7b-35a7-4093-bad9-1ec0da8e0c05",
+    "altitudeKm": 790,
+    "massKg": 8211,
+    "launchYear": 2002,
+    "operational": false,
+    "instruments": [
+      "ASAR",
+      "MERIS"
+    ]
+  },
+  {
+    "id": "7352edae-7bde-487d-93a3-bc14e12f5ba5",
+    "name": "GPS IIR-2",
+    "targetId": "5126aa7b-35a7-4093-bad9-1ec0da8e0c05",
+    "altitudeKm": 20200,
+    "massKg": 2032,
+    "launchYear": 1997,
+    "operational": true,
+    "instruments": [
+      "atomóra",
+      "navigációs adó"
+    ]
+  },
+  {
+    "id": "b3a0f3bc-3a77-43ac-9d61-8b53ee421d4c",
+    "name": "GOES-16",
+    "targetId": "5126aa7b-35a7-4093-bad9-1ec0da8e0c05",
+    "altitudeKm": 35786,
+    "massKg": 5192,
+    "launchYear": 2016,
+    "operational": true,
+    "instruments": [
+      "ABI",
+      "GLM"
+    ]
+  },
+  {
+    "id": "ad380066-c0f9-4024-88d7-95c6eb98d49a",
+    "name": "Lunar Reconnaissance Orbiter",
+    "targetId": "7ce0fa02-ee12-419a-8138-73c7b2416e54",
+    "altitudeKm": 50,
+    "massKg": 1916,
+    "launchYear": 2009,
+    "operational": true,
+    "instruments": [
+      "LROC",
+      "LOLA",
+      "Diviner"
+    ]
+  },
+  {
+    "id": "e4c4d6ba-bf77-4590-9da3-7ad13be88fdb",
+    "name": "Mars Reconnaissance Orbiter",
+    "targetId": "0451f9d0-996d-4874-8dcb-8752f91fc076",
+    "altitudeKm": 300,
+    "massKg": 2180,
+    "launchYear": 2005,
+    "operational": true,
+    "instruments": [
+      "HiRISE",
+      "CRISM",
+      "SHARAD"
+    ]
+  },
+  {
+    "id": "99e6d231-de49-4808-8efe-ede2bbd60070",
+    "name": "2001 Mars Odyssey",
+    "targetId": "0451f9d0-996d-4874-8dcb-8752f91fc076",
+    "altitudeKm": 400,
+    "massKg": 725,
+    "launchYear": 2001,
+    "operational": true,
+    "instruments": [
+      "THEMIS",
+      "GRS"
+    ]
+  },
+  {
+    "id": "4d9bed60-16eb-4694-b373-ce6f5c34350d",
+    "name": "Juno",
+    "targetId": "aa7c3f45-3a06-4c32-986f-470fc420547a",
+    "altitudeKm": 4200,
+    "massKg": 3625,
+    "launchYear": 2011,
+    "operational": true,
+    "instruments": [
+      "JunoCam",
+      "MWR",
+      "JIRAM"
+    ]
+  },
+  {
+    "id": "31e7b27d-2f28-4e3c-8fc7-f81871d688d8",
+    "name": "Venus Express",
+    "targetId": "d4a8fe6c-4656-4a8a-9079-18241cd7fe98",
+    "altitudeKm": 250,
+    "massKg": 1270,
+    "launchYear": 2005,
+    "operational": false,
+    "instruments": [
+      "VMC",
+      "VIRTIS"
+    ]
+  }
+]

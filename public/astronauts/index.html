@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="hu" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E" />
+    <title>Asztronauták · Űrügynökség</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../shared/base.css" />
+    <script src="../shared/theme.js"></script>
+  </head>
+  <body>
+    <!-- ============ NAVBAR (közös, minden oldalon azonos) ============ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="../index.html">
+          <i class="bi bi-stars me-1"></i> Űrügynökség
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Menü"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../missions/index.html"><i class="bi bi-flag me-1"></i>Küldetések</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../astronauts/index.html"><i class="bi bi-person-badge me-1"></i>Asztronauták</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../rockets/index.html"><i class="bi bi-rocket-takeoff me-1"></i>Rakéták</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../targets/index.html"><i class="bi bi-globe-americas me-1"></i>Célpontok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../satellites/index.html"><i class="bi bi-broadcast me-1"></i>Műholdak</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-lightbulb me-1"></i>Megoldások</a>
+              <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Minta-megoldások</h6></li>
+                <li><a class="dropdown-item" href="../megoldasok/missions/index.html"><i class="bi bi-flag me-2"></i>Küldetések</a></li>
+                <li><a class="dropdown-item" href="../megoldasok/astronauts/index.html"><i class="bi bi-person-badge me-2"></i>Asztronauták</a></li>
+                <li><a class="dropdown-item" href="../megoldasok/rockets/index.html"><i class="bi bi-rocket-takeoff me-2"></i>Rakéták</a></li>
+                <li><a class="dropdown-item" href="../megoldasok/targets/index.html"><i class="bi bi-globe-americas me-2"></i>Célpontok</a></li>
+                <li><a class="dropdown-item" href="../megoldasok/satellites/index.html"><i class="bi bi-broadcast me-2"></i>Műholdak</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../megoldasok/index.html"><i class="bi bi-speedometer2 me-2"></i>Mission Control</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="../megoldasok/astronauts/index.html" class="btn btn-warning btn-sm me-2" title="A minta-megoldás megnyitása"><i class="bi bi-lightbulb me-1"></i>Megoldás</a>
+          <button id="theme-toggle" class="btn btn-outline-secondary btn-sm" type="button" title="Téma váltása">
+            <i class="bi bi-sun"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <noscript>
+        <div class="alert alert-warning">Az oldal működéséhez JavaScript szükséges.</div>
+      </noscript>
+
+      <!-- Ide építsd fel az oldalt (ld. tasks/ – 1. feladat): fejléc, statisztika, eszköztár,
+           állapotüzenetek, kártyarács, kategóriák -->
+    </main>
+
+    <!-- Ide kerül a kártyasablon (<template id="card-template">) és a modal (#edit-modal) -->
+
+    <footer class="border-top py-3 mt-5">
+      <div class="container text-center text-body-secondary small">
+        🚀 Űrügynökség · ZH-gyakorló csapatprojekt · 2026
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

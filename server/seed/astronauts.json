@@ -1,0 +1,130 @@
+[
+  {
+    "id": "68f073f9-bda1-4ffd-a619-396c0cd4a7d7",
+    "name": "Reid Wiseman",
+    "nationality": "amerikai",
+    "age": 50,
+    "flightHours": 3960,
+    "isCommander": true,
+    "missionId": "57f43292-c25b-4abe-847a-60b3f709a614",
+    "skills": [
+      "pilóta",
+      "űrséta"
+    ],
+    "image": ""
+  },
+  {
+    "id": "6a6ecf0e-80be-43fa-bca1-1a5c92e5cbf2",
+    "name": "Victor Glover",
+    "nationality": "amerikai",
+    "age": 49,
+    "flightHours": 4200,
+    "isCommander": false,
+    "missionId": "57f43292-c25b-4abe-847a-60b3f709a614",
+    "skills": [
+      "pilóta",
+      "mérnök"
+    ],
+    "image": ""
+  },
+  {
+    "id": "7c480a8c-db7f-485d-931e-f6674edb09c6",
+    "name": "Christina Koch",
+    "nationality": "amerikai",
+    "age": 47,
+    "flightHours": 7440,
+    "isCommander": false,
+    "missionId": "57f43292-c25b-4abe-847a-60b3f709a614",
+    "skills": [
+      "mérnök",
+      "űrséta",
+      "tudós"
+    ],
+    "image": ""
+  },
+  {
+    "id": "a15285c0-ef58-4955-8565-c69b5b4dd086",
+    "name": "Jeremy Hansen",
+    "nationality": "kanadai",
+    "age": 50,
+    "flightHours": 240,
+    "isCommander": false,
+    "missionId": "57f43292-c25b-4abe-847a-60b3f709a614",
+    "skills": [
+      "pilóta"
+    ],
+    "image": ""
+  },
+  {
+    "id": "4ff25fab-a918-4a4f-a01a-7c1e8dccc9a3",
+    "name": "Kapu Tibor",
+    "nationality": "magyar",
+    "age": 34,
+    "flightHours": 480,
+    "isCommander": false,
+    "missionId": "94a26748-fddb-4b50-b45a-3e854ebdca7c",
+    "skills": [
+      "mérnök",
+      "tudós"
+    ],
+    "image": ""
+  },
+  {
+    "id": "1ee25149-bcf6-4411-afa8-03d6582058b8",
+    "name": "Samantha Cristoforetti",
+    "nationality": "olasz",
+    "age": 49,
+    "flightHours": 9600,
+    "isCommander": true,
+    "missionId": null,
+    "skills": [
+      "pilóta",
+      "mérnök",
+      "robotkar"
+    ],
+    "image": ""
+  },
+  {
+    "id": "b03f23ed-94c5-44e2-87d4-196924c4685f",
+    "name": "Sunita Williams",
+    "nationality": "amerikai",
+    "age": 61,
+    "flightHours": 14900,
+    "isCommander": true,
+    "missionId": "b4807dbf-337e-4f6b-8312-01646eb8eaca",
+    "skills": [
+      "pilóta",
+      "űrséta",
+      "robotkar"
+    ],
+    "image": ""
+  },
+  {
+    "id": "88a63a51-63e6-44c2-bcea-0f0846e8e7ab",
+    "name": "Thomas Pesquet",
+    "nationality": "francia",
+    "age": 48,
+    "flightHours": 9500,
+    "isCommander": false,
+    "missionId": null,
+    "skills": [
+      "mérnök",
+      "űrséta"
+    ],
+    "image": ""
+  },
+  {
+    "id": "5d231ba9-8005-467d-92fb-c609a9e00872",
+    "name": "Wang Yaping",
+    "nationality": "kínai",
+    "age": 46,
+    "flightHours": 4600,
+    "isCommander": false,
+    "missionId": null,
+    "skills": [
+      "pilóta",
+      "tudós"
+    ],
+    "image": ""
+  }
+]

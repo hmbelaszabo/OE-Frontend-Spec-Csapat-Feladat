@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="hu" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E" />
+    <title>Célpontok · Űrügynökség</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../shared/base.css" />
+    <script src="../../shared/theme.js"></script>
+  </head>
+  <body>
+    <!-- ============ NAVBAR (közös, minden oldalon azonos) ============ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="../index.html">
+          <i class="bi bi-stars me-1"></i> Űrügynökség
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Menü"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../missions/index.html"><i class="bi bi-flag me-1"></i>Küldetések</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../astronauts/index.html"><i class="bi bi-person-badge me-1"></i>Asztronauták</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../rockets/index.html"><i class="bi bi-rocket-takeoff me-1"></i>Rakéták</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../targets/index.html"><i class="bi bi-globe-americas me-1"></i>Célpontok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../satellites/index.html"><i class="bi bi-broadcast me-1"></i>Műholdak</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-lightbulb me-1"></i>Megoldások</a>
+              <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Minta-megoldások</h6></li>
+                <li><a class="dropdown-item" href="../missions/index.html"><i class="bi bi-flag me-2"></i>Küldetések</a></li>
+                <li><a class="dropdown-item" href="../astronauts/index.html"><i class="bi bi-person-badge me-2"></i>Asztronauták</a></li>
+                <li><a class="dropdown-item" href="../rockets/index.html"><i class="bi bi-rocket-takeoff me-2"></i>Rakéták</a></li>
+                <li><a class="dropdown-item" href="../targets/index.html"><i class="bi bi-globe-americas me-2"></i>Célpontok</a></li>
+                <li><a class="dropdown-item" href="../satellites/index.html"><i class="bi bi-broadcast me-2"></i>Műholdak</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../index.html"><i class="bi bi-speedometer2 me-2"></i>Mission Control</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="../../targets/index.html" class="btn btn-outline-info btn-sm me-2" title="Vissza a feladathoz (váz)"><i class="bi bi-arrow-left-circle me-1"></i>Vissza a feladathoz</a>
+          <button id="theme-toggle" class="btn btn-outline-secondary btn-sm" type="button" title="Téma váltása">
+            <i class="bi bi-sun"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+        <main class="container py-4">
+      <noscript>
+        <div class="alert alert-warning">Az oldal működéséhez JavaScript szükséges.</div>
+      </noscript>
+
+      <!-- ============ OLDALFEJLÉC ============ -->
+      <header class="mb-4">
+        <h1 class="h2"><i class="bi bi-globe-americas page-icon me-2"></i>Célpontok</h1>
+        <p class="text-body-secondary mb-0">A Naprendszer égitestjei, amelyeket az ügynökség vizsgál.</p>
+      </header>
+
+      <!-- ============ STATISZTIKA ============ -->
+      <section class="row row-cols-1 row-cols-md-3 g-3 mb-4" aria-label="Statisztika">
+        <div class="col">
+          <div class="card text-center h-100 stat-card">
+            <div class="card-header small text-body-secondary"><i class="bi bi-geo-alt me-1"></i>Legközelebbi célpont</div>
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <div id="stat-closest" class="stat-value">–</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center h-100 stat-card">
+            <div class="card-header small text-body-secondary"><i class="bi bi-thermometer-half me-1"></i>Átlaghőmérséklet</div>
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <div id="stat-avg-temp" class="stat-value">–</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center h-100 stat-card">
+            <div class="card-header small text-body-secondary"><i class="bi bi-tree me-1"></i>Van lakható célpont?</div>
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <div id="stat-has-habitable" class="stat-value">–</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ESZKÖZTÁR ============ -->
+      <section class="card mb-3" aria-label="Eszköztár">
+        <div class="card-body d-flex flex-wrap align-items-center gap-2 py-2">
+          <div class="input-group w-auto">
+            <label class="input-group-text" for="sort-select"><i class="bi bi-sort-down"></i></label>
+            <select id="sort-select" class="form-select">
+              <option value="name-asc">Név (A–Z)</option>
+              <option value="distanceMkm-asc">Távolság (növekvő)</option>
+              <option value="avgTempC-desc">Hőmérséklet (csökkenő)</option>
+            </select>
+          </div>
+          <div class="ms-auto d-flex flex-wrap gap-2">
+            <button id="new-btn" type="button" class="btn btn-primary">
+              <i class="bi bi-plus-lg me-1"></i>Új célpont
+            </button>
+            <button id="bulk-btn" type="button" class="btn btn-warning">
+              <i class="bi bi-thermometer-half me-1"></i>Lakhatóság újraértékelése
+            </button>
+            <button id="reload-btn" type="button" class="btn btn-outline-secondary" title="Újratöltés">
+              <i class="bi bi-arrow-clockwise"></i>
+            </button>
+            <button id="reset-btn" type="button" class="btn btn-outline-danger" title="Adatok visszaállítása">
+              <i class="bi bi-arrow-counterclockwise"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ÁLLAPOTÜZENETEK ============ -->
+      <div id="loading" class="text-center my-5 d-none">
+        <div class="spinner-border" role="status"></div>
+        <div class="text-body-secondary mt-2">Betöltés…</div>
+      </div>
+      <div id="error-alert" class="alert alert-danger d-none" role="alert"></div>
+      <p id="empty-message" class="text-center text-body-secondary my-5 d-none">
+        Nincs megjeleníthető célpont.
+      </p>
+
+      <!-- ============ KÁRTYARÁCS ============ -->
+      <section id="target" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" aria-label="Célpontok"></section>
+
+      <!-- ============ BÓNUSZ: KATEGÓRIÁK ============ -->
+      <section class="mt-5" aria-label="Kategóriák">
+        <h2 class="h5 mb-3">Kategóriák típus szerint</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card border-primary h-100">
+              <div class="card-header text-bg-primary">Bolygók</div>
+              <ul id="category-planet" class="list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-info h-100">
+              <div class="card-header text-bg-info">Holdak</div>
+              <ul id="category-moon" class="list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-warning h-100">
+              <div class="card-header text-bg-warning">Kisbolygók</div>
+              <ul id="category-asteroid" class="list-group list-group-flush"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ KÁRTYASABLON ============ -->
+    <template id="card-template">
+      <div class="col">
+        <article class="card h-100 entity-card">
+          <div class="card-header d-flex justify-content-between align-items-center gap-2">
+            <span class="badge text-bg-primary target-type"></span>
+            <span class="badge target-habitable"></span>
+          </div>
+          <div class="card-body pb-2">
+            <h3 class="card-title h5 mb-0 target-name"></h3>
+          </div>
+          <ul class="list-group list-group-flush small">
+            <li class="list-group-item d-flex justify-content-between gap-2"><span class="text-body-secondary"><i class="bi bi-arrows-expand me-1"></i>Távolság</span><span class="fw-semibold text-end target-distance"></span></li>
+            <li class="list-group-item d-flex justify-content-between gap-2"><span class="text-body-secondary"><i class="bi bi-thermometer-half me-1"></i>Átlaghőmérséklet</span><span class="fw-semibold text-end target-temp"></span></li>
+            <li class="list-group-item d-flex justify-content-between gap-2"><span class="text-body-secondary"><i class="bi bi-moon me-1"></i>Holdak</span><span class="fw-semibold text-end target-moons"></span></li>
+            <li class="list-group-item d-flex justify-content-between gap-2"><span class="text-body-secondary"><i class="bi bi-arrow-down-circle me-1"></i>Gravitáció</span><span class="fw-semibold text-end target-gravity"></span></li>
+            <li class="list-group-item d-flex justify-content-between gap-2"><span class="text-body-secondary"><i class="bi bi-flag me-1"></i>Látogatások</span><span class="fw-semibold text-end target-visits"></span></li>
+          </ul>
+          <div class="card-footer d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary edit-button">
+              <i class="bi bi-pencil"></i> Szerkesztés
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-danger delete-button">
+              <i class="bi bi-trash"></i> Törlés
+            </button>
+          </div>
+        </article>
+      </div>
+    </template>
+
+    <!-- ============ LÉTREHOZÓ / SZERKESZTŐ MODAL ============ -->
+    <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <form id="edit-form" class="modal-content" novalidate>
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modal-title">Új célpont</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="field-id" />
+            <div class="form-floating mb-2">
+              <input type="text" class="form-control" id="field-name" placeholder="Név" required />
+              <label for="field-name">Név</label>
+            </div>
+            <div class="form-floating mb-2">
+              <select class="form-select" id="field-type" required>
+                <option value="planet">bolygó</option>
+                <option value="moon">hold</option>
+                <option value="asteroid">kisbolygó</option>
+              </select>
+              <label for="field-type">Típus</label>
+            </div>
+            <div class="row g-2 mb-2">
+              <div class="col">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="field-distanceMkm" placeholder="Távolság" min="0" step="any" required />
+                  <label for="field-distanceMkm">Távolság (millió km)</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="field-avgTempC" placeholder="Hőmérséklet" step="any" required />
+                  <label for="field-avgTempC">Átlaghőmérséklet (°C)</label>
+                </div>
+              </div>
+            </div>
+            <div class="row g-2 mb-2">
+              <div class="col">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="field-moons" placeholder="Holdak" min="0" step="1" required />
+                  <label for="field-moons">Holdak száma</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="field-gravity" placeholder="Gravitáció" min="0" step="any" required />
+                  <label for="field-gravity">Gravitáció (g)</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="field-habitable" />
+              <label class="form-check-label" for="field-habitable">Lakható</label>
+            </div>
+            <div id="modal-error" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Mégse</button>
+            <button type="button" id="add-btn" class="btn btn-success">
+              <i class="bi bi-floppy me-1"></i>Létrehozás
+            </button>
+            <button type="button" id="update-btn" class="btn btn-warning d-none">
+              <i class="bi bi-pencil me-1"></i>Módosítás
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="border-top py-3 mt-5">
+      <div class="container text-center text-body-secondary small">
+        🚀 Űrügynökség · ZH-gyakorló csapatprojekt · 2026
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

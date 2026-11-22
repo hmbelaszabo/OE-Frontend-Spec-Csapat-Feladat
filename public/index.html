@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="hu" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E" />
+    <title>Űrügynökség</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="shared/base.css" />
+    <script src="shared/theme.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html"><i class="bi bi-stars me-1"></i> Űrügynökség</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Menü">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="missions/index.html"><i class="bi bi-flag me-1"></i>Küldetések</a></li>
+            <li class="nav-item"><a class="nav-link" href="astronauts/index.html"><i class="bi bi-person-badge me-1"></i>Asztronauták</a></li>
+            <li class="nav-item"><a class="nav-link" href="rockets/index.html"><i class="bi bi-rocket-takeoff me-1"></i>Rakéták</a></li>
+            <li class="nav-item"><a class="nav-link" href="targets/index.html"><i class="bi bi-globe-americas me-1"></i>Célpontok</a></li>
+            <li class="nav-item"><a class="nav-link" href="satellites/index.html"><i class="bi bi-broadcast me-1"></i>Műholdak</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-lightbulb me-1"></i>Megoldások</a>
+              <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Minta-megoldások</h6></li>
+                <li><a class="dropdown-item" href="megoldasok/missions/index.html"><i class="bi bi-flag me-2"></i>Küldetések</a></li>
+                <li><a class="dropdown-item" href="megoldasok/astronauts/index.html"><i class="bi bi-person-badge me-2"></i>Asztronauták</a></li>
+                <li><a class="dropdown-item" href="megoldasok/rockets/index.html"><i class="bi bi-rocket-takeoff me-2"></i>Rakéták</a></li>
+                <li><a class="dropdown-item" href="megoldasok/targets/index.html"><i class="bi bi-globe-americas me-2"></i>Célpontok</a></li>
+                <li><a class="dropdown-item" href="megoldasok/satellites/index.html"><i class="bi bi-broadcast me-2"></i>Műholdak</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="megoldasok/index.html"><i class="bi bi-speedometer2 me-2"></i>Mission Control</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="megoldasok/index.html" class="btn btn-warning btn-sm me-2" title="A minta-megoldás megnyitása"><i class="bi bi-lightbulb me-1"></i>Megoldás</a>
+          <button id="theme-toggle" class="btn btn-outline-secondary btn-sm" type="button" title="Téma váltása">
+            <i class="bi bi-sun"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <noscript>
+        <div class="alert alert-warning">A Mission Control dashboardhoz JavaScript szükséges – a modulok linkjei enélkül is működnek.</div>
+      </noscript>
+
+      <header class="py-4 mb-4 text-center">
+        <h1 class="display-5"><i class="bi bi-stars page-icon me-2"></i>Űrügynökség</h1>
+        <p class="lead text-body-secondary">ZH-gyakorló csapatprojekt · öt modul, öt API, egy közös irányítóközpont</p>
+      </header>
+
+      <!-- ============ MODULOK ============ -->
+      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-5" aria-label="Modulok">
+        <div class="col">
+          <a class="card h-100 entity-card text-decoration-none" href="missions/index.html">
+            <div class="card-body"><h2 class="h5"><i class="bi bi-flag page-icon me-2"></i>Küldetések</h2><p class="text-body-secondary mb-0">Múltbeli és tervezett űrküldetések, költségvetéssel.</p></div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card h-100 entity-card text-decoration-none" href="astronauts/index.html">
+            <div class="card-body"><h2 class="h5"><i class="bi bi-person-badge page-icon me-2"></i>Asztronauták</h2><p class="text-body-secondary mb-0">Az űrhajós-állomány, repült órákkal és beosztással.</p></div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card h-100 entity-card text-decoration-none" href="rockets/index.html">
+            <div class="card-body"><h2 class="h5"><i class="bi bi-rocket-takeoff page-icon me-2"></i>Rakéták</h2><p class="text-body-secondary mb-0">Hordozórakéták, teherbírás és indítási statisztika.</p></div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card h-100 entity-card text-decoration-none" href="targets/index.html">
+            <div class="card-body"><h2 class="h5"><i class="bi bi-globe-americas page-icon me-2"></i>Célpontok</h2><p class="text-body-secondary mb-0">Bolygók, holdak és kisbolygók a Naprendszerben.</p></div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card h-100 entity-card text-decoration-none" href="satellites/index.html">
+            <div class="card-body"><h2 class="h5"><i class="bi bi-broadcast page-icon me-2"></i>Műholdak</h2><p class="text-body-secondary mb-0">Keringő műszerek a Föld és más égitestek körül.</p></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ BÓNUSZ: MISSION CONTROL ============ -->
+      <section aria-label="Mission Control">
+        <h2 class="h4 mb-3"><i class="bi bi-speedometer2 page-icon me-2"></i>Mission Control</h2>
+        <div class="card">
+          <div class="card-body text-body-secondary">
+            <i class="bi bi-people me-1"></i>Közös csapatfeladat (bónusz): az öt modul elkészülte után ide kerül az
+            összesítő dashboard, amely mind az öt API <code>get…</code> végpontjából összesít (<code>Promise.all</code>, <code>reduce</code>).
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-top py-3 mt-5">
+      <div class="container text-center text-body-secondary small">🚀 Űrügynökség · ZH-gyakorló csapatprojekt · 2026</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
